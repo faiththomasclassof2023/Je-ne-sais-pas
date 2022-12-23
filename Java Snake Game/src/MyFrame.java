@@ -27,6 +27,7 @@ public class MyFrame extends JFrame implements KeyListener {
 	public void keyPressed(KeyEvent e) {
 		// TODO Auto-generated method stub 
 		if (e.getKeyCode()== KeyEvent.VK_W) {
+			//r.setPosY(r.getPosY() + 50);
 			
 		}
 		if (e.getKeyCode()== KeyEvent.VK_A) {
@@ -38,6 +39,9 @@ public class MyFrame extends JFrame implements KeyListener {
 		if (e.getKeyCode()== KeyEvent.VK_D) {
 			 
 		}
+		
+		//repaint at the end of the keylistener so the screen always updates
+		//repaint();
 	}
 	@Override
 	public void keyReleased(KeyEvent e) {
